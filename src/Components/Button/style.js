@@ -9,8 +9,8 @@ const Styled = styled.button`
   font-size: 17px;
   line-height: 1.471;
   border-radius: 6px;
-  color: white;
-  background: ${({ variant, color }) => variants[variant].main || colors[color] || color || variants.default};
+  color: ${colors.white};
+  background: ${({ variant, color }) => variants[variant]?.main || colors[color] || color || variants.default.main};
   min-width: 212px;
   min-height: 45px;
   &:hover {

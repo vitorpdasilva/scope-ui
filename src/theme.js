@@ -19,6 +19,7 @@ export const colors = {
   silver: '#bdc3c7',
   concrete: '#95a5a6',
   asbestos: '#7f8c8d',
+  white: '#fff',
 }
   
 export const variants = {

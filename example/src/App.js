@@ -3,22 +3,19 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
-import { Button } from 'scope-ui';
+import { Navbar } from 'scope-ui';
 import ButtonPage from './pages/button';
+
+const items = [
+  { name: 'Button', url: '/button' },
+  { name: 'Form', url: '/form' },
+]
 
 const App = () => {
   return (
     <Router>
-      <ul>
-        <li>
-          <Link to="/button">Button</Link>
-        </li>
-        <li>
-          <Link to="/form">Form</Link>
-        </li>
-      </ul>
+      <Navbar items={items} />
       <Switch>
         <Route path="/button" component={ButtonPage} />
       </Switch>
