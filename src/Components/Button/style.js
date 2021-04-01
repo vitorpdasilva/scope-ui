@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { colors, variants } from '../../theme';
+import { colors, variants, transition } from '../../theme';
 
 const Styled = styled.button`
   cursor: pointer;
-  transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: ${transition};
   border: 0;
   padding: 10px 19px;
   font-size: 17px;

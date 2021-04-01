@@ -56,3 +56,5 @@ export const variants = {
     hover: 'rgba(189,195,199, 0.75)',
   },
 }
+
+export const transition = `border .25s linear, color .25s linear, background-color .25s linear`;
