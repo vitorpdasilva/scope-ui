@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import Styled from './style';
 
 const Button = ({ children }) => (
-    <Fragment>
+    <Styled>
       {children}
-    </Fragment>
+    </Styled>
 );
 
 export default Button;
