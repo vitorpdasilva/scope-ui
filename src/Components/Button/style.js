@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { colors, variants, transition } from '../../theme';
 
-const Styled = styled.button`
+const StyledButton = styled.button`
   cursor: pointer;
   transition: ${transition};
   border: 0;
@@ -18,4 +18,4 @@ const Styled = styled.button`
   }
 `;
 
-export default Styled;
+export default StyledButton;

@@ -1,11 +1,13 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { variants, colors, transition } from '../../theme';
 
-const Styled = styled.nav`
-  height: 53px;
+const StyledNav = styled.nav`
+  height: ${({ vertical }) => vertical ? '100vh' : '53px'};
   background: ${({ variant, color }) => variants[variant]?.main || colors[color] || color || variants.inverse.main};
   color: ${colors.white};
   display: flex;
+  width: ${({ vertical }) => vertical ? '140px' : 'auto'};
+  flex-direction: ${({ vertical }) => vertical ? 'column' : 'inherit'};
   * {
     text-decoration: none;
     color: white;
@@ -14,7 +16,7 @@ const Styled = styled.nav`
 
 export const NavItem = styled.div`
   transition: ${transition};
-  height: 100%;
+  height: ${({ vertical }) => vertical ? '53px' : '100%'};
   min-width: 108px;
   display: flex;
   justify-content: center;
@@ -26,4 +28,4 @@ export const NavItem = styled.div`
   }
 `;
 
-export default Styled;
+export default StyledNav;

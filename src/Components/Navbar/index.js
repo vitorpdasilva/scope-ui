@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Styled, { NavItem } from './style';
+import StyledNav, { NavItem } from './style';
 
-const Navbar = ({ items = [], children }) => (
+const Navbar = ({ items = [], vertical = false, children, ...props }) => (
 	<Router>
-		<Styled>
+		<StyledNav {...props} vertical={vertical}>
 			{items?.map(({ name, url, external = false, ...rest }) => (
-				<NavItem key={name}>
+				<NavItem key={name} vertical={vertical} {...props}>
 					{external ? (
 						<a href={url} target="_blank" {...rest}>{name}</a>
 					) : (
@@ -15,7 +15,7 @@ const Navbar = ({ items = [], children }) => (
 				</NavItem>
 			))}
 			{children}
-		</Styled>
+		</StyledNav>
 	</Router>
 );
 
