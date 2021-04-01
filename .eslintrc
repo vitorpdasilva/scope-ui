@@ -28,6 +28,10 @@
     "react/jsx-handler-names": 0,
     "react/jsx-fragments": 0,
     "react/no-unused-prop-types": 0,
-    "import/export": 0
+    "import/export": 0,
+    "semi": ["always"],
+    "no-extra-semi": ["error"],
+    "eol-last": ["error", "always"],
+    "object-curly-spacing": ["always"]
   }
 }
