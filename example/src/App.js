@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent, Button } from 'scope-ui'
-import 'scope-ui/dist/index.css'
+import { Button } from 'scope-ui';
 
 const App = () => {
   return (
