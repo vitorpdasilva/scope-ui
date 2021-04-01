@@ -1,19 +1,28 @@
 import React from 'react';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import { Button } from 'scope-ui';
+import ButtonPage from './pages/button';
 
 const App = () => {
   return (
-    <>
-      <Button variant="primary">123</Button>
-      <Button variant="success">123</Button>
-      <Button variant="warning">123</Button>
-      <Button variant="info">123</Button>
-      <Button variant="disabled">123</Button>
-      <Button variant="inverse">123</Button>
-      <Button variant="default">123</Button>
-      <Button variant="danger">123</Button>
-    </>
+    <Router>
+      <ul>
+        <li>
+          <Link to="/button">Button</Link>
+        </li>
+        <li>
+          <Link to="/form">Form</Link>
+        </li>
+      </ul>
+      <Switch>
+        <Route path="/button" component={ButtonPage} />
+      </Switch>
+    </Router>
   )
 }
 

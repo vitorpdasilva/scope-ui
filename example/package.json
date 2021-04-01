@@ -10,11 +10,12 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "my-library": "file:..",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "file:../node_modules/react-scripts",
-    "web-vitals": "file:../node_modules/web-vitals",
-    "my-library": "file:.."
+    "web-vitals": "file:../node_modules/web-vitals"
   },
   "eslintConfig": {
     "extends": [
