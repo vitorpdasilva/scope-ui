@@ -16,6 +16,9 @@ const StyledButton = styled.button`
   &:hover {
     background: ${({ variant }) => variants[variant].hover};
   }
+  &:focus {
+    outline: none;
+  }
 `;
 
 export default StyledButton;
