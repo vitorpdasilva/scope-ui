@@ -9,20 +9,17 @@ const Button = ({ variant, onClick, children, ...rest }) => (
     </StyledButton>
 );
 
+const variantsTypes = Object.keys(variants);
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(Object.keys(variants)),
-  primary: PropTypes.bool,
-  backgroundColor: PropTypes.string,
+  variant: PropTypes.oneOf(['primary', 'success', 'warning', 'inverse', 'default', 'info', 'danger', 'disabled']),
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   children: PropTypes.isRequired,
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
+  variant: 'default',
   onClick: undefined,
 };
 
