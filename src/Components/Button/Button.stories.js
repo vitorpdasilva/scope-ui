@@ -7,11 +7,53 @@ export default {
   component: Button,
 };
 
-export const Primary = () => <Button variant="primary">primary</Button>
-export const Success = () => <Button variant="success">success</Button>
-export const Warning = () => <Button variant="warning">warning</Button>
-export const Inverse = () => <Button variant="inverse">inverse</Button>
-export const Default = () => <Button variant="default">default</Button>
-export const Info = () => <Button variant="info">info</Button>
-export const Danger = () => <Button variant="danger">danger</Button>
-export const Disabled = () => <Button variant="disabled">disabled</Button>
+const Template = args => <Button {...args} />
+
+export const Primary = Template.bind({});
+export const Success = Template.bind({});
+export const Warning = Template.bind({});
+export const Inverse = Template.bind({});
+export const Default = Template.bind({});
+export const Info = Template.bind({});
+export const Danger = Template.bind({});
+export const Disabled = Template.bind({});
+
+Primary.args = {
+	variant: 'primary',
+	children: 'primary',
+};
+
+Success.args = {
+	variant: 'success',
+	children: 'success',
+};
+
+Warning.args = {
+	variant: 'warning',
+	children: 'warning',
+};
+
+Inverse.args = {
+	variant: 'inverse',
+	children: 'inverse',
+};
+
+Default.args = {
+	variant: 'default',
+	children: 'default',
+};
+
+Info.args = {
+	variant: 'info',
+	children: 'info',
+};
+
+Danger.args = {
+	variant: 'danger',
+	children: 'danger',
+};
+
+Disabled.args = {
+	variant: 'disabled',
+	children: 'disabled',
+};
