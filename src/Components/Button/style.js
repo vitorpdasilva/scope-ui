@@ -13,9 +13,9 @@ const StyledButton = styled.button`
   background: ${({ variant, color }) => variants[variant]?.main || colors[color] || color || variants.default.main};
   min-width: 212px;
   min-height: 45px;
-  &:hover {
+  /* &:hover {
     background: ${({ variant }) => variants[variant].hover};
-  }
+  } */
   &:focus {
     outline: none;
   }
