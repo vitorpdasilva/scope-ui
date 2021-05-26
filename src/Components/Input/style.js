@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, variants } from '../../theme';
+import { variants, sizes } from '../../theme';
 
 const StyledInput = styled.input`
 	border: 2px solid;
@@ -8,6 +8,7 @@ const StyledInput = styled.input`
 	padding: 8px 12px;
 	box-sizing: border-box;
 	border-radius: 6px;
+	transform: ${({ size }) => `scale(${sizes[size]})`};
 	&:focus {
 		outline: none;
 	}

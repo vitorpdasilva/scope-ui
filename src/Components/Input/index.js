@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StyledInput from './style';
 
-const Input = ({ variant, ...rest }) => (
-    <StyledInput variant={variant} {...rest} />
+const Input = ({ variant, size = 'medium', ...rest }) => (
+    <StyledInput size={size} variant={variant} {...rest} />
 );
 
 Input.propTypes = {
