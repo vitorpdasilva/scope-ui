@@ -6,11 +6,45 @@ export default {
 	component: Input,
 };
 
-export const Primary = () => <Input variant="primary" placeholder="primary" />
-export const Success = () => <Input variant="success" placeholder="success" />
-export const Warning = () => <Input variant="warning" placeholder="warning" />
-export const Inverse = () => <Input variant="inverse" placeholder="inverse" />
-export const Default = () => <Input variant="default" placeholder="default" />
-export const Info = () => <Input variant="info" placeholder="info" />
-export const Danger = () => <Input variant="danger" placeholder="danger" />
-export const Disabled = () => <Input variant="disabled" placeholder="disabled" />
+const Template = args => <Input {...args} />
+
+export const Primary = Template.bind({});
+export const Success = Template.bind({});
+export const Warning = Template.bind({});
+export const Inverse = Template.bind({});
+export const Default = Template.bind({});
+export const Info = Template.bind({});
+export const Danger = Template.bind({});
+export const Disabled = Template.bind({});
+
+Primary.args = {
+	variant: 'primary',
+};
+
+Success.args = {
+	variant: 'success',
+};
+
+Warning.args = {
+	variant: 'warning',
+};
+
+Inverse.args = {
+	variant: 'inverse',
+};
+
+Default.args = {
+	variant: 'default',
+};
+
+Info.args = {
+	variant: 'info',
+};
+
+Danger.args = {
+	variant: 'danger',
+};
+
+Disabled.args = {
+	variant: 'disabled',
+};

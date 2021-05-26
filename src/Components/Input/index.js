@@ -8,12 +8,13 @@ const Input = ({ variant, ...rest }) => (
 
 Input.propTypes = {
   variant: PropTypes.oneOf(['primary', 'success', 'warning', 'inverse', 'default', 'info', 'danger', 'disabled']),
-  children: PropTypes.isRequired,
-  onClick: PropTypes.func,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+	onClick: PropTypes.func,
 };
 
 Input.defaultProps = {
   variant: 'default',
+	size: 'medium',
   onClick: undefined,
 };
 
