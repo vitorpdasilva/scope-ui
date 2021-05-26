@@ -21,7 +21,7 @@ export const colors = {
   asbestos: '#7f8c8d',
   white: '#fff',
 }
-  
+
 export const variants = {
   primary: {
     main: colors.turquoise,
@@ -55,6 +55,12 @@ export const variants = {
     main: 'rgba(189,195,199, 0.75)',
     hover: 'rgba(189,195,199, 0.75)',
   },
+}
+
+export const sizes = {
+	small: 0.75,
+	medium: 1,
+	large: 1.25,
 }
 
 export const transition = `border .25s linear, color .25s linear, background-color .25s linear`;
