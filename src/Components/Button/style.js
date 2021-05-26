@@ -17,6 +17,7 @@ const StyledButton = styled.button`
   &:hover {
     background: ${({ variant }) => variants[variant].hover};
   }
+	cursor: ${({ variant, disabled }) => variant === 'disabled' || disabled ? 'not-allowed' : 'pointer'};
   &:focus {
     outline: none;
   }
