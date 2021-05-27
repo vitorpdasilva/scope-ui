@@ -6,7 +6,7 @@ export default {
 	component: Title,
 }
 
-const Template = (args, { argTypes }) => <Title {...args} />
+const Template = args => <Title {...args} />
 
 export const Primary = Template.bind({});
 export const Success = Template.bind({});
@@ -20,42 +20,47 @@ export const Disabled = Template.bind({});
 
 Primary.args = {
 	children: 'Primary',
-	level: 3,
 	as: 'h1',
 	variant: 'primary',
 }
+Primary.decorators = [
+	() => (
+		<>
+			<Title {...Primary.args} level={5} />
+			<Title {...Primary.args} level={4} />
+			<Title {...Primary.args} level={3} />
+			<Title {...Primary.args} level={2} />
+			<Title {...Primary.args} level={1} />
+		</>
+	)
+]
 
 Success.args = {
 	children: 'Success',
-	level: 3,
 	as: 'h1',
 	variant: 'success',
 }
 
 Warning.args = {
 	children: 'Warning',
-	level: 3,
 	as: 'h1',
 	variant: 'warning',
 }
 
 Inverse.args = {
 	children: 'Inverse',
-	level: 3,
 	as: 'h1',
 	variant: 'inverse',
 }
 
 Default.args = {
 	children: 'Default',
-	level: 3,
 	as: 'h1',
 	variant: 'default',
 }
 
 Info.args = {
 	children: 'Info',
-	level: 3,
 	as: 'h1',
 	variant: 'info',
 }
@@ -69,7 +74,6 @@ Danger.args = {
 
 Disabled.args = {
 	children: 'Disabled',
-	level: 3,
 	as: 'h1',
 	variant: 'disabled',
 }
