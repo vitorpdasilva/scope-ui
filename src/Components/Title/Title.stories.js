@@ -64,7 +64,6 @@ Warning.decorators = [
 
 
 Inverse.args = {
-	children: 'Inverse',
 	as: 'h1',
 	variant: 'inverse',
 }
@@ -79,7 +78,6 @@ Inverse.decorators = [
 ];
 
 Default.args = {
-	children: 'Default',
 	as: 'h1',
 	variant: 'default',
 }
@@ -94,7 +92,6 @@ Default.decorators = [
 ];
 
 Info.args = {
-	children: 'Info',
 	as: 'h1',
 	variant: 'info',
 }
@@ -109,8 +106,6 @@ Info.decorators = [
 ];
 
 Danger.args = {
-	children: 'Danger',
-	level: 3,
 	as: 'h1',
 	variant: 'danger',
 }
@@ -125,7 +120,6 @@ Danger.decorators = [
 ];
 
 Disabled.args = {
-	children: 'Disabled',
 	as: 'h1',
 	variant: 'disabled',
 }
